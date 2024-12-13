@@ -1,0 +1,110 @@
+/* General Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.highlight {
+    background-color: #dff0d8;
+}
+
+
+/* Schedule Container Styles */
+.schedule-container {
+    max-height: 300px; /* Adjust the height as needed */
+    border-bottom: solid 1.4px;
+    border-color: #DEE2E6;
+    overflow-y: auto;
+    margin-top: 5px;
+}
+
+/* Table Container Styles */
+.table-container {
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto;
+}
+
+.table-body {
+    display: block;
+    overflow-y: auto;
+}
+
+.table thead, .table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table thead {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #f8f9fa;
+}
+
+.highlight-today {
+    background-color: #f7f58a !important; /* You can change this to any color you prefer */
+    font-weight: bold;
+}
+/* Styling for mini tables and buttons */
+.mini-table {
+    width: calc(25% - 20px); /* Set width to 25% to fit 4 mini-tables */
+    border-bottom: solid 1.4px;
+    border-color: #DEE2E6;
+    margin: 20px 10px; 
+    float: left;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.mini-table h5 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.mini-table button {
+    border: none;
+    background: none;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mini-table button:hover {
+    color: #f8f9fa;
+}
+
+/* Clearfix to ensure floated elements behave correctly */
+.mini-table-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-item.active a {
+    background-color: #007bff; /* Highlight color for the navbar */
+    color: white;
+}
+
+.highlight {
+    background-color: #f0f0f0; /* Highlight color for the table */
+    font-weight: bold;
+}
+ 
